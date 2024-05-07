@@ -1,0 +1,125 @@
+@font-face {
+    font-family: opensans;
+    src: url(./fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    font-family: opensans;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(10, 10, 50);
+}
+
+.content {
+    max-width: 1440px;
+    width: 100%;
+    
+}
+
+.calculate-box {
+    color: white;
+    display: flex;
+    width: 40%;
+    border: solid black 1px;
+    padding: 24px;
+    border-radius: 8px;
+    background-color: rgb(68, 67, 135);
+}
+
+/*calculate box left*/
+
+.calculate-box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    width: 60%;
+}
+
+.calculate-box-frequenz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.calculate-box-frequenz-radio {
+    gap: 3px;
+}
+
+.input-box {
+    border: solid black 1px;
+    display: flex;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.label {
+    background-color: rgba(202, 202, 202, 0.2);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border-right: solid black 1px;
+}
+
+.input {
+    height: 100%;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+
+.input::placeholder {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.label-quantity {
+    border: none;
+    border-left: solid black 1px;
+}
+
+.calculate-box-clacButton {
+    height: 40px;
+}
+
+/*calculate box right*/
+
+.calculate-box-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.calculate-box-result {
+    font-size: 8em;
+    font-weight: bold;
+    color: rgb(193, 193, 193, 0.3);
+}
+
+.calculate-box-unit {
+    font-weight: bold;
+}
+
+.d-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.margin-0 {
+    margin: 0;
+}

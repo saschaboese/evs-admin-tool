@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVS-Admin-Tool</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="codecs.js"></script>
 </head>
+
 <body>
-    
+
+    <div class="content">
+
+        <div class="calculate-box">
+            <div class="calculate-box-left">
+                <div class="calculate-box-codecs input-box">
+                    <label for="codecs" class="label">Codecs</label>
+                    <!-- <input list="codecs" class="input" name="browser" id="calculatebox-1-codec"
+                        placeholder="Bitte hier auswählen.." type="select" style="cursor: pointer;"> -->
+
+                    <select class="input" id="calculatebox-1-codec">
+                        <option value="Avid DNxHD 120">Avid DNxHD 120</option>
+                        <option value="Avid DNxHD 185">Avid DNxHD 185</option>
+                        <option value="Apple ProRes 422 LT">Apple ProRes 422 LT</option>
+                        <option value="Apple ProRes 422">Apple ProRes 422</option>
+                        <option value="Apple ProRes 422 HQ">Apple ProRes 422 HQ</option>
+                        <option value="DVCPro HD">DVCPro HD</option>
+                        <option value="AVC-Intra 100">AVC-Intra 100</option>
+                        <option value="XAVC-Intra 100">XAVC-Intra 100</option>
+                        <option value="Mjpeg EVS (HD)">Mjpeg EVS (HD)</option>
+                        <option value="Mjpeg Standart (HD)">Mjpeg Standart (HD)</option>
+                        <option value="Mpeg2 Intra (HD)">Mpeg2 Intra (HD)</option>
+                    </select>
+
+                </div>
+
+                <div class="calculate-box-time input-box">
+                    <input type="number" class="input" min="0" name="calculatebox-1-minutes" id="calculatebox-1-minutes"
+                        placeholder="Minuten" id="calculate-box-1-minutes">
+                    <label for="minutes" class="label label-quantity">Länge</label>
+                </div>
+                <div class="quantity d-space-between input-box">
+                    <label for="quantity" class="label">Streams</label>
+                    <input type="number" class="input" name="calculatebox-1-streams" id="calculatebox-1-streams"
+                        placeholder="Menge" min="1" value="1">
+                </div>
+                <div class="calculate-box-frequenz">
+                    <div class="calculate-box-frequenz-radio d-center">
+                        <label for="calculatebox-1-frequenz">i</label>
+                        <input type="radio" name="calculatebox-1-frequenz" id="calculatebox-1-frequenz-i"
+                            class="margin-0" value="i">
+                    </div>
+                    <div class="calculate-box-frequenz-radio d-center">
+                        <label for="calculatebox-1-frequenz">p</label>
+                        <input type="radio" name="calculatebox-1-frequenz" id="calculatebox-1-frequenz-p"
+                            class="margin-0" value="p">
+                    </div>
+                </div>
+
+                <button onclick="calculate_box(1)" class="calculate-box-clacButton">Ausrechnen</button>
+            </div>
+
+            <div class="calculate-box-right">
+                <div class="calculate-box-result" id="calculatebox-1-result">
+                    0
+                </div>
+                <div class="calculate-box-unit">
+                    GB
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </body>
+
 </html>
